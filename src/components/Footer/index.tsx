@@ -17,7 +17,8 @@ const Footer = () => {
                   </h2>
                 </Link>
                 <p className="mb-9 text-base leading-relaxed text-body-color dark:text-body-color-dark">
-                  L'API de mobilité pour les villes africaines. Solutions de transport et géolocalisation innovantes pour un avenir connecté.
+                  L&apos;API de mobilité pour les villes africaines. Solutions de transport et géolocalisation innovantes pour un avenir connecté.
+                  {/* Correction ici: L'API devient L&apos;API */}
                 </p>
                 <div className="flex items-center">
                   <a
@@ -161,9 +162,9 @@ const Footer = () => {
                 </h2>
                 <ul className="space-y-4">
                   <li className="flex items-start space-x-3">
-                    <FontAwesomeIcon 
-                      icon={faEnvelope} 
-                      className="mt-1 text-body-color dark:text-body-color-dark" 
+                    <FontAwesomeIcon
+                      icon={faEnvelope}
+                      className="mt-1 text-body-color dark:text-body-color-dark"
                       size="sm"
                     />
                     <span className="text-base text-body-color dark:text-body-color-dark">
@@ -171,9 +172,9 @@ const Footer = () => {
                     </span>
                   </li>
                   <li className="flex items-start space-x-3">
-                    <FontAwesomeIcon 
-                      icon={faPhone} 
-                      className="mt-1 text-body-color dark:text-body-color-dark" 
+                    <FontAwesomeIcon
+                      icon={faPhone}
+                      className="mt-1 text-body-color dark:text-body-color-dark"
                       size="sm"
                     />
                     <span className="text-base text-body-color dark:text-body-color-dark">
@@ -181,9 +182,9 @@ const Footer = () => {
                     </span>
                   </li>
                   <li className="flex items-start space-x-3">
-                    <FontAwesomeIcon 
-                      icon={faMapMarkerAlt} 
-                      className="mt-1 text-body-color dark:text-body-color-dark" 
+                    <FontAwesomeIcon
+                      icon={faMapMarkerAlt}
+                      className="mt-1 text-body-color dark:text-body-color-dark"
                       size="sm"
                     />
                     <span className="text-base text-body-color dark:text-body-color-dark">
@@ -278,7 +279,7 @@ const Footer = () => {
             </defs>
           </svg>
         </div>
-        
+
         <div className="absolute bottom-24 left-0 z-[-1]">
           <svg
             width="79"

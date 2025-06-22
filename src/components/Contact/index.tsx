@@ -1,4 +1,3 @@
-// src/components/Contact.tsx
 'use client';
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -22,14 +21,16 @@ const Contact: React.FC = () => {
       icon: faMapMarkerAlt,
       title: "Adresse",
       content: "Melen, Yaoundé, Cameroun",
-      link: "https://maps.app.goo.gl/exempleDeLienGoogleMaps"
+      // Remplacez 'https://maps.app.goo.gl/exempleDeLienGoogleMaps' par une URL de carte valide
+      // C'est une bonne idée d'utiliser une URL réelle de Google Maps, par exemple:
+      link: "https://www.google.com/maps/place/Melen,+Yaound%C3%A9,+Cameroon" // Exemple d'URL de carte valide
     }
   ];
 
   return (
     <section id="contact" className="py-16 md:py-20 lg:py-28 bg-white dark:bg-dark">
       <div className="container mx-auto px-6 max-w-7xl">
-        
+
         {/* Section Titre */}
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-extrabold text-gray-900 dark:text-white mb-4 leading-tight">
@@ -37,12 +38,12 @@ const Contact: React.FC = () => {
           </h2>
           <p className="text-lg md:text-xl text-gray-700 dark:text-body-color-dark max-w-3xl mx-auto">
             Nous sommes là pour vous aider à concrétiser vos idées de mobilité géospatiale.
-            N'hésitez pas à nous contacter pour toutes vos questions ou demandes d'informations.
+            N&apos;hésitez pas à nous contacter pour toutes vos questions ou demandes d&apos;informations. {/* Correction des apostrophes ici */}
           </p>
         </div>
 
         <div className="flex justify-center">
-          
+
           {/* Bloc d'informations de contact centré */}
           <div className="bg-gradient-to-br from-blue-600 to-blue-800 p-8 md:p-10 rounded-2xl shadow-xl max-w-2xl w-full">
             <h3 className="text-2xl font-bold text-white mb-8 border-b border-blue-400 pb-4">Informations de Contact</h3>
@@ -66,7 +67,7 @@ const Contact: React.FC = () => {
                 </div>
               ))}
             </div>
-            
+
             {/* Bloc d'horaires et infos supplémentaires */}
             <div className="mt-10 p-6 bg-blue-700 rounded-lg border border-blue-600 shadow-inner">
               <div className="flex items-center mb-3">
@@ -74,7 +75,7 @@ const Contact: React.FC = () => {
                 <h4 className="text-lg font-bold text-blue-100">Horaires & Support</h4>
               </div>
               <p className="text-sm text-blue-200 leading-relaxed">
-                <strong>Horaires d'ouverture :</strong><br />
+                <strong>Horaires d&apos;ouverture :</strong><br /> {/* Correction de l'apostrophe ici */}
                 Lundi - Vendredi : 9h00 - 18h00 (WAT)<br />
                 Nous nous efforçons de répondre à toutes les demandes sous 24h ouvrables.
               </p>

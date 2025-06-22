@@ -1,4 +1,3 @@
-// src/components/Blog/index.tsx
 'use client';
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -21,18 +20,14 @@ const FAQ: React.FC = () => {
   };
 
   const faqData: FAQItem[] = [
-    
-    
     {
-      question: "L'API NAVIGOO couvre-t-elle toute le Cameroun ?",
+      question: "L&apos;API NAVIGOO couvre-t-elle toute le Cameroun ?", // Remplacé ' par &apos;
       answer: "Actuellement, notre API se limite à la ville de Yaoundé"
     },
-    
     {
-      question: "Puis-je utiliser l'API pour une application mobile ?",
+      question: "Puis-je utiliser l&apos;API pour une application mobile ?", // Remplacé ' par &apos;
       answer: "Absolument ! Notre API REST est compatible avec toutes les plateformes."
     },
-    
     {
       question: "Comment gérez-vous la sécurité des données ?",
       answer: "Toutes les communications avec notre API sont chiffrées via HTTPS/TLS. Nous ne stockons aucune donnée personnelle sensible et respectons le RGPD."
@@ -45,12 +40,10 @@ const FAQ: React.FC = () => {
       question: "Quel support est disponible ?",
       answer: "Nous offrons un support par email pour tous les utilisateurs."
     },
-    
     {
-      question: "L'API fonctionne-t-elle hors ligne ?",
-      answer: "L'API NAVIGOO nécessite une connexion internet pour fonctionner car elle fournit des données en temps réel."
+      question: "L&apos;API fonctionne-t-elle hors ligne ?", // Remplacé ' par &apos;
+      answer: "L&apos;API NAVIGOO nécessite une connexion internet pour fonctionner car elle fournit des données en temps réel." // Remplacé ' par &apos;
     },
-  
   ];
 
   return (
@@ -62,7 +55,7 @@ const FAQ: React.FC = () => {
             <h2 className="text-4xl font-bold text-gray-900 dark:text-white">Questions Fréquentes</h2>
           </div>
           <p className="text-xl text-gray-600 dark:text-body-color-dark max-w-2xl mx-auto">
-            Trouvez rapidement les réponses aux questions les plus courantes sur l'API NAVIGOO.
+            Trouvez rapidement les réponses aux questions les plus courantes sur l&apos;API NAVIGOO. {/* Remplacé ' par &apos; */}
           </p>
         </div>
 
@@ -103,8 +96,6 @@ const FAQ: React.FC = () => {
               </div>
             ))}
           </div>
-
-          
         </div>
       </div>
     </section>

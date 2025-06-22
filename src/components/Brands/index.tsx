@@ -1,16 +1,16 @@
-// src/components/Brands/index.tsx
 'use client'; // Garder 'use client' car c'est une bonne pratique pour les composants interactifs, même avec un simple lien
 
 import React from 'react';
 
 const SwaggerLinkSection: React.FC = () => {
+  // L'URL de Swagger est bien placée ici.
   const swaggerUrl = "https://gest-geospatiale.onrender.com/swagger-ui.html";
 
   return (
     <section id="api-docs" className="py-16 md:py-20 lg:py-28 bg-white dark:bg-gray-dark">
       <div className="container mx-auto px-6 max-w-7xl text-center">
         <h2 className="text-4xl lg:text-5xl font-extrabold text-gray-900 dark:text-white mb-6 leading-tight">
-          Documentation de l'API NAVIGOO
+          Documentation de l&apos;API NAVIGOO {/* Correction ici : ' devient &apos; */}
         </h2>
         <p className="text-lg md:text-xl text-gray-700 dark:text-body-color-dark max-w-3xl mx-auto mb-12">
           Explorez en détail les capacités de notre API géospatiale via notre documentation interactive Swagger UI.
@@ -35,7 +35,7 @@ const SwaggerLinkSection: React.FC = () => {
         </a>
 
         <p className="mt-8 text-sm text-gray-500 dark:text-gray-400">
-          La documentation s'ouvrira dans un nouvel onglet de votre navigateur.
+          La documentation s&apos;ouvrira dans un nouvel onglet de votre navigateur. {/* Correction ici : ' devient &apos; */}
         </p>
       </div>
     </section>
