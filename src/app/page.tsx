@@ -11,10 +11,11 @@ import Contact from "@/components/Contact";
 import SectionTitle from "@/components/Common/SectionTitle"; // Assure-toi que SectionTitle est importé
 
 export const metadata: Metadata = {
-  title: "NAVIGOO - Solutions de Mobilité Géospatiale pour l'Afrique",
+  title: "NAVIGOO ",
   description: "Découvrez NAVIGOO : Géolocalisation, suivi en temps réel et optimisation d'itinéraires pour entreprises et particuliers au Cameroun et en Afrique.",
   keywords: "géolocalisation Cameroun, suivi GPS Yaoundé, API mobilité Afrique, optimisation itinéraires, transport Cameroun, navigation API",
 };
+// <Pricing />
 
 export default function Home() {
   return (
@@ -26,8 +27,11 @@ export default function Home() {
       <Features /> {/* Le contenu réel des fonctionnalités */}
      
       <Brands />
-      <Testimonials />
-      <Pricing />
+      <section id="testimonials">
+        <Testimonials />
+      </section>
+
+      
       <Blog />
       <Contact />
     </>

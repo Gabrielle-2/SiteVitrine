@@ -21,54 +21,36 @@ const FAQ: React.FC = () => {
   };
 
   const faqData: FAQItem[] = [
+    
+    
     {
-      question: "Comment obtenir une clé API ?",
-      answer: "Pour obtenir votre clé API, inscrivez-vous gratuitement sur notre plateforme. Une fois votre compte créé, vous recevrez immédiatement votre clé API dans votre tableau de bord. Le plan gratuit vous donne accès à 1 000 requêtes par mois."
+      question: "L'API NAVIGOO couvre-t-elle toute le Cameroun ?",
+      answer: "Actuellement, notre API se limite à la ville de Yaoundé"
     },
-    {
-      question: "Quelles sont les limites du plan gratuit ?",
-      answer: "Le plan gratuit inclut 1 000 requêtes par mois, l'accès aux données de base, le support par email et la documentation complète. Il est parfait pour tester l'API et développer des prototypes."
-    },
-    {
-      question: "L'API NAVIGOO couvre-t-elle toute l'Afrique ?",
-      answer: "Actuellement, notre API se concentre principalement sur les grandes villes d'Afrique centrale et occidentale, avec une couverture particulièrement détaillée au Cameroun. Nous étendons progressivement notre couverture géographique selon la demande."
-    },
-    {
-      question: "Comment l'API gère-t-elle les données en temps réel ?",
-      answer: "Notre API utilise des données mises à jour en continu grâce à notre réseau de chauffeurs partenaires et nos algorithmes d'analyse du trafic. Les informations de trafic et les positions des véhicules sont actualisées toutes les 30 secondes."
-    },
+    
     {
       question: "Puis-je utiliser l'API pour une application mobile ?",
-      answer: "Absolument ! Notre API REST est compatible avec toutes les plateformes : applications mobiles iOS/Android, applications web, systèmes backend. Nous fournissons des exemples de code pour les principales technologies."
+      answer: "Absolument ! Notre API REST est compatible avec toutes les plateformes."
     },
-    {
-      question: "Quels types de véhicules sont supportés ?",
-      answer: "L'API NAVIGOO supporte plusieurs types de véhicules : taxis urbains, motos-taxis, véhicules de transport en commun, et véhicules privés. Chaque type a ses propres tarifs et caractéristiques de navigation."
-    },
+    
     {
       question: "Comment gérez-vous la sécurité des données ?",
-      answer: "Toutes les communications avec notre API sont chiffrées via HTTPS/TLS. Nous ne stockons aucune donnée personnelle sensible et respectons le RGPD. Vos clés API sont sécurisées et peuvent être régénérées à tout moment."
+      answer: "Toutes les communications avec notre API sont chiffrées via HTTPS/TLS. Nous ne stockons aucune donnée personnelle sensible et respectons le RGPD."
     },
     {
       question: "Y a-t-il une documentation technique détaillée ?",
-      answer: "Oui, nous fournissons une documentation complète avec des exemples de code dans plusieurs langages (JavaScript, Python, PHP, etc.), des guides d'intégration et des cas d'usage. Un bac à sable interactif est également disponible."
+      answer: "Non, pas pour le moment"
     },
     {
       question: "Quel support est disponible ?",
-      answer: "Nous offrons un support par email pour tous les utilisateurs, un support prioritaire pour les clients Professional, et un support dédié 24/7 pour les clients Enterprise. Notre équipe technique répond généralement sous 24h."
+      answer: "Nous offrons un support par email pour tous les utilisateurs."
     },
-    {
-      question: "Puis-je migrer d'un plan à un autre ?",
-      answer: "Oui, vous pouvez changer de plan à tout moment depuis votre tableau de bord. La migration est immédiate et vous ne payez que la différence au prorata. Aucune interruption de service n'est à prévoir."
-    },
+    
     {
       question: "L'API fonctionne-t-elle hors ligne ?",
-      answer: "L'API NAVIGOO nécessite une connexion internet pour fonctionner car elle fournit des données en temps réel. Cependant, vous pouvez mettre en cache certaines données (comme les points d'intérêt) pour une utilisation hors ligne limitée."
+      answer: "L'API NAVIGOO nécessite une connexion internet pour fonctionner car elle fournit des données en temps réel."
     },
-    {
-      question: "Comment sont calculés les tarifs des trajets ?",
-      answer: "Les tarifs sont calculés selon plusieurs facteurs : distance, durée estimée, type de véhicule, conditions de trafic, et tarifs locaux. Notre algorithme prend en compte les spécificités de chaque ville africaine pour des estimations précises."
-    }
+  
   ];
 
   return (
@@ -122,30 +104,7 @@ const FAQ: React.FC = () => {
             ))}
           </div>
 
-          <div className="mt-12 text-center">
-            <div className="bg-blue-50 dark:bg-blue-900 rounded-2xl p-8">
-              <h3 className="text-xl font-bold text-gray-800 dark:text-white mb-4">
-                Vous ne trouvez pas votre réponse ?
-              </h3>
-              <p className="text-gray-600 dark:text-body-color-dark mb-6">
-                Notre équipe support est là pour vous aider avec toutes vos questions techniques ou commerciales.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <a
-                  href="#contact"
-                  className="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
-                >
-                  Nous contacter
-                </a>
-                <a
-                  href="#api-docs"
-                  className="bg-white text-blue-600 border-2 border-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors dark:bg-gray-700 dark:text-blue-400 dark:border-blue-400 dark:hover:bg-gray-600"
-                >
-                  Voir la documentation
-                </a>
-              </div>
-            </div>
-          </div>
+          
         </div>
       </div>
     </section>

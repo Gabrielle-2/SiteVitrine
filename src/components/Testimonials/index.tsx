@@ -1,10 +1,7 @@
-// src/components/Testimonials/index.tsx (or Testimonials.tsx if that's its name)
-
 import React from 'react';
 import { Linkedin, Twitter, Github } from 'lucide-react'; // Make sure lucide-react is installed
 
-// You might want to move this interface and data to a separate file like `teamData.ts`
-// but for now, we'll keep it here as you requested
+// Interface for a team member
 interface TeamMember {
   name: string;
   role: string;
@@ -18,22 +15,33 @@ interface TeamMember {
   };
 }
 
+// Data for the team members
 const teamMembers: TeamMember[] = [
+  {
+    name: "Pr. Dr. Eng. Thomas DJOTIO NDIE",
+    role: "Encadrant",
+    bio: "",
+    avatarColor: "bg-gradient-to-br from-gray-700 to-gray-900",
+    initials: "TD",
+    social: {
+      linkedin: "#",
+    }
+  },
   {
     name: "NGUETCHUISSI Brunel Landry",
     role: "Chef de groupe",
-    bio: "22P.", // Assuming '22P' refers to their cohort/promo
+    bio: "22P584",
     avatarColor: "bg-gradient-to-br from-pink-400 to-purple-500",
     initials: "NB",
     social: {
-      linkedin: "#", // Replace with actual links
-      twitter: "#"   // Replace with actual links
+      linkedin: "#",
+      twitter: "#"
     }
   },
   {
     name: "HEUMI BIATEU Arthur",
     role: "Membre",
-    bio: "22P",
+    bio: "22P267",
     avatarColor: "bg-gradient-to-br from-blue-400 to-indigo-500",
     initials: "HB",
     social: {
@@ -44,7 +52,7 @@ const teamMembers: TeamMember[] = [
   {
     name: "NKOLO ATANGANA Stacy",
     role: "Membre",
-    bio: "22P",
+    bio: "22P582",
     avatarColor: "bg-gradient-to-br from-green-400 to-teal-500",
     initials: "NA",
     social: {
@@ -54,9 +62,9 @@ const teamMembers: TeamMember[] = [
     }
   },
   {
-    name: "NANA NDOUNDAM Gabrielle Chekinael",
+    name: "NANA NDOUNDAM Gabrielle",
     role: "Membre",
-    bio: "22P",
+    bio: "22P482",
     avatarColor: "bg-gradient-to-br from-orange-400 to-red-500",
     initials: "NN",
     social: {
@@ -66,10 +74,10 @@ const teamMembers: TeamMember[] = [
   },
   {
     name: "NEPESTOUN MATHIS",
-    role: "Membre", // Corrected typo from "Memebre"
-    bio: "25P",
+    role: "Membre",
+    bio: "24P759",
     avatarColor: "bg-gradient-to-br from-yellow-400 to-orange-500",
-    initials: "EM", // Changed from ER to EM for "Epestoim Mathis"
+    initials: "NP",
     social: {
       linkedin: "#",
       twitter: "#"
@@ -77,48 +85,33 @@ const teamMembers: TeamMember[] = [
   }
 ];
 
-// Reusable avatar component
-const VectorAvatar = ({ initials, colorClass }: { initials: string; colorClass: string }) => (
-  <div className={`w-24 h-24 rounded-full mx-auto mb-4 flex items-center justify-center text-white font-bold text-xl ${colorClass} shadow-lg`}>
-    {initials}
-  </div>
-);
-
-// This is your main "Testimonials" component, but it renders the Team data
-const Testimonials: React.FC = () => { // Renamed from Team to Testimonials
+const Team: React.FC = () => {
   return (
-    <section id="team" className="py-16 bg-white dark:bg-gray-dark"> {/* Added dark mode bg */}
-      <div className="container mx-auto px-6">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-gray-800 dark:text-white mb-4">Notre Équipe</h2> {/* Added dark mode text */}
-          <p className="text-xl text-gray-600 dark:text-body-color-dark max-w-2xl mx-auto"> {/* Added dark mode text */}
-            Une équipe passionnée d'experts en géolocalisation, dédiée à créer les meilleures solutions pour les développeurs.
-          </p>
-        </div>
-
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+    <section className="py-12 bg-gray-50 dark:bg-gray-900">
+      <div className="container mx-auto px-4">
+        <h2 className="text-3xl font-bold text-center text-gray-800 dark:text-white mb-8">Notre équipe</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {teamMembers.map((member, index) => (
-            <div key={index} className="bg-gray-50 dark:bg-gray-800 rounded-2xl p-6 text-center hover:shadow-lg transition-all duration-300 hover:transform hover:-translate-y-1"> {/* Added dark mode bg */}
-              <div className="mb-6">
-                <VectorAvatar initials={member.initials} colorClass={member.avatarColor} />
-                <h3 className="text-xl font-bold text-gray-800 dark:text-white mb-1">{member.name}</h3> {/* Added dark mode text */}
-                <p className="text-blue-600 font-semibold mb-3">{member.role}</p>
-                <p className="text-gray-600 dark:text-body-color-dark text-sm leading-relaxed">{member.bio}</p> {/* Added dark mode text */}
+            <div key={index} className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 flex flex-col items-center text-center">
+              <div className={`w-24 h-24 rounded-full flex items-center justify-center text-white text-3xl font-bold mb-4 ${member.avatarColor}`}>
+                {member.initials}
               </div>
-
-              <div className="flex justify-center space-x-4">
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-white">{member.name}</h3>
+              <p className="text-md text-gray-600 dark:text-gray-400 mb-2">{member.role}</p>
+              <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">{member.bio}</p>
+              <div className="flex space-x-4">
                 {member.social.linkedin && (
-                  <a href={member.social.linkedin} className="text-gray-400 hover:text-blue-600 transition-colors duration-200 p-2 rounded-full hover:bg-blue-50">
+                  <a href={member.social.linkedin} target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-blue-600 dark:hover:text-blue-400">
                     <Linkedin size={20} />
                   </a>
                 )}
                 {member.social.twitter && (
-                  <a href={member.social.twitter} className="text-gray-400 hover:text-blue-400 transition-colors duration-200 p-2 rounded-full hover:bg-blue-50">
+                  <a href={member.social.twitter} target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-blue-400 dark:hover:text-blue-300">
                     <Twitter size={20} />
                   </a>
                 )}
                 {member.social.github && (
-                  <a href={member.social.github} className="text-gray-400 hover:text-gray-800 transition-colors duration-200 p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-gray-300"> {/* Added dark mode hover bg/text */}
+                  <a href={member.social.github} target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-gray-900 dark:hover:text-white">
                     <Github size={20} />
                   </a>
                 )}
@@ -131,4 +124,4 @@ const Testimonials: React.FC = () => { // Renamed from Team to Testimonials
   );
 };
 
-export default Testimonials; // Exporting as Testimonials
+export default Team; // Exporting as Team

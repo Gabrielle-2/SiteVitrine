@@ -25,12 +25,12 @@ const menuData: Menu[] = [
     path: "/#testimonials", // Correct: Links to the 'testimonials' section on the homepage
     newTab: false,
   },
-  {
-    id: 5,
-    title: "Nos tarifs", // Corrected title for Pricing section
-    path: "/#pricing", // Correct: Links to the 'pricing' section on the homepage
-    newTab: false,
-  },
+  //{
+    //id: 5,
+    //title: "Nos tarifs", // Corrected title for Pricing section
+    //path: "/#pricing", // Correct: Links to the 'pricing' section on the homepage
+    //newTab: false,
+  //},
   
   {
     id: 6, // Unique ID

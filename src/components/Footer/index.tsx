@@ -187,7 +187,7 @@ const Footer = () => {
                       size="sm"
                     />
                     <span className="text-base text-body-color dark:text-body-color-dark">
-                      Mendong, Yaoundé, Cameroun
+                      Melen, Yaoundé, Cameroun
                     </span>
                   </li>
                 </ul>
