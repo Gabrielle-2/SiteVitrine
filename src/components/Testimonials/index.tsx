@@ -19,7 +19,7 @@ interface TeamMember {
 const teamMembers: TeamMember[] = [
   {
     name: "Pr. Dr. Eng. Thomas DJOTIO NDIE",
-    role: "Encadrant",
+    role: "Encadreur",
     bio: "",
     avatarColor: "bg-gradient-to-br from-gray-700 to-gray-900",
     initials: "TD",

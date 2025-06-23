@@ -21,11 +21,11 @@ const FAQ: React.FC = () => {
 
   const faqData: FAQItem[] = [
     {
-      question: "L&apos;API NAVIGOO couvre-t-elle toute le Cameroun ?", // Remplacé ' par &apos;
+      question: "L'API NAVIGOO couvre-t-elle toute le Cameroun ?", 
       answer: "Actuellement, notre API se limite à la ville de Yaoundé"
     },
     {
-      question: "Puis-je utiliser l&apos;API pour une application mobile ?", // Remplacé ' par &apos;
+      question: "Puis-je utiliser l'API pour une application mobile ?",
       answer: "Absolument ! Notre API REST est compatible avec toutes les plateformes."
     },
     {
@@ -41,7 +41,7 @@ const FAQ: React.FC = () => {
       answer: "Nous offrons un support par email pour tous les utilisateurs."
     },
     {
-      question: "L&apos;API fonctionne-t-elle hors ligne ?", // Remplacé ' par &apos;
+      question: "L'API fonctionne-t-elle hors ligne ?", 
       answer: "L&apos;API NAVIGOO nécessite une connexion internet pour fonctionner car elle fournit des données en temps réel." // Remplacé ' par &apos;
     },
   ];
