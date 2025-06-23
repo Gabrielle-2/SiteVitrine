@@ -34,7 +34,7 @@ const FAQ: React.FC = () => {
     },
     {
       question: "Y a-t-il une documentation technique détaillée ?",
-      answer: "Non, pas pour le moment"
+      answer: "Oui, sur la documentation le swagger est disponible"
     },
     {
       question: "Quel support est disponible ?",
@@ -42,7 +42,7 @@ const FAQ: React.FC = () => {
     },
     {
       question: "L'API fonctionne-t-elle hors ligne ?", 
-      answer: "L&apos;API NAVIGOO nécessite une connexion internet pour fonctionner car elle fournit des données en temps réel." // Remplacé ' par &apos;
+      answer: "L'API NAVIGOO nécessite une connexion internet pour fonctionner car elle fournit des données en temps réel." // Remplacé ' par &apos;
     },
   ];
 
